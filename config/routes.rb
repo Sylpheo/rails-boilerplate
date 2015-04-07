@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  use_doorkeeper
   root 'landing#index'
   mount Boilerplate::API => '/'
   # The priority is based upon order of creation: first created -> highest priority.
