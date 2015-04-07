@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  use_doorkeeper
+  use_doorkeeper do
+    skip_controllers :applications, :authorized_applications
+  end
   root 'landing#index'
   mount Boilerplate::API => '/'
   # The priority is based upon order of creation: first created -> highest priority.
