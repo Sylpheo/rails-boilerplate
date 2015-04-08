@@ -9,8 +9,9 @@ gem 'rails', '4.2.1'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'grape'
+gem 'grape-entity'
 
-gem 'doorkeeper'
+gem 'doorkeeper', '2.1.4'
 
 gem 'hashie-forbidden_attributes'
 
